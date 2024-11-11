@@ -6,6 +6,8 @@ services:
     pull_policy: always
     ports:
       - "8081:80"
+    environment:
+      - FEATURE_NEW_CONTACT_FORM=true
     volumes:
       - ./public:/var/www/html
     restart: always
