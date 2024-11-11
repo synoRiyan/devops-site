@@ -3,7 +3,7 @@ FROM php:7.4-apache
 
 # Copy application files
 COPY public/ /var/www/html/
-COPY server.php /var/www/html/public/
+COPY public/server.php /var/www/html/
 
 # Expose the default web port
 EXPOSE 80
