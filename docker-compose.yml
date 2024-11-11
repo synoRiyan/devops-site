@@ -1,4 +1,4 @@
-version: '3'
+version: '1.6'
 services:
   web:
     image: 192.168.3.7:3000/devops-site:1.6
