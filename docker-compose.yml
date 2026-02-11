@@ -1,13 +1,10 @@
-version: '1.6'
+version: '3.9'   # modern docker-compose version
 services:
   web:
     image: 192.168.3.7:3000/devops-site:1.6
     container_name: devops-site
-    pull_policy: always
     ports:
       - "8086:80"
     environment:
       - FEATURE_NEW_CONTACT_FORM=true
-    volumes:
-      - ./public:/var/www/html
     restart: always
