@@ -5,7 +5,7 @@ services:
     container_name: devops-site
     pull_policy: always
     ports:
-      - "8081:80"
+      - "8086:80"
     environment:
       - FEATURE_NEW_CONTACT_FORM=true
     volumes:
